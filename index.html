@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of [YOUR NAME] - student and web developer.">
+    <title>[YOUR NAME] | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="logo">[YOUR NAME]</a>
+
+            <!-- Hamburger button (visible on mobile only) -->
+            <button class="hamburger" id="hamburger" type="button"
+                    aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================= HOME / HERO ================= -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1>[YOUR NAME]</h1>
+                    <h2 class="hero-role">Student | Web Developer | Programmer</h2>
+                    <p class="hero-intro">
+                        I am a passionate student interested in programming, web development, and modern
+                        technology. I enjoy learning new skills and building practical projects.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="photo-frame">
+                        <!-- Put your own photo at images/profile.jpg (see README) -->
+                        <img src="images/profile.jpg" alt="Profile photo of [YOUR NAME]" class="profile-img">
+                        <div class="photo-placeholder" hidden>YN</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ME ================= -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A little about who I am</p>
+
+                <div class="about-grid reveal">
+                    <div class="about-image">
+                        <div class="photo-frame small">
+                            <img src="images/profile.jpg" alt="Profile photo of [YOUR NAME]" class="profile-img">
+                            <div class="photo-placeholder" hidden>YN</div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <h3>Introduction</h3>
+                        <p>
+                            My name is [YOUR NAME]. I am a student passionate about technology. I love turning ideas
+                            into real websites and programs, and I enjoy solving problems step by step.
+                            Replace this paragraph with a short introduction about yourself.
+                        </p>
+
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <h4>🎓 Education</h4>
+                                <p><strong>B.E. / B.Tech - Computer Science and Engineering (AI &amp; DS)</strong></p>
+                                <p>[Your College Name], 3rd Year</p>
+                                <p>Higher Secondary - [Your School Name]</p>
+                            </div>
+
+                            <div class="info-card">
+                                <h4>🚀 Career Interests</h4>
+                                <ul>
+                                    <li>Web development</li>
+                                    <li>Data science and AI</li>
+                                    <li>Software engineering</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-card">
+                                <h4>💪 Personal Strengths</h4>
+                                <ul>
+                                    <li>Quick learner</li>
+                                    <li>Problem solving</li>
+                                    <li>Team work and communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies I am learning and using</p>
+
+                <div class="skills-grid">
+                    <!-- Each skill: name, percentage text, and a bar. data-level sets the bar width. -->
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>HTML5</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>CSS3</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>Python</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>SQL / Databases</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-top"><span>Git &amp; GitHub</span><span>65%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+                    </div>
+                </div>
+
+                <h3 class="tools-title">Tools &amp; Other Skills</h3>
+                <div class="tags reveal">
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Machine Learning Basics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some things I have built</p>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-thumb thumb-1">💰</div>
+                        <div class="project-body">
+                            <h3>Personal Expense Calculator</h3>
+                            <p>A web app that records income and expenses, calculates savings and shows reports with charts.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link">Live Demo</a>
+                                <a href="#" class="link">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-thumb thumb-2">✅</div>
+                        <div class="project-body">
+                            <h3>To-Do List App</h3>
+                            <p>A simple task manager where you can add, complete and delete tasks. Replace with your own project.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link">Live Demo</a>
+                                <a href="#" class="link">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-thumb thumb-3">🌦️</div>
+                        <div class="project-body">
+                            <h3>Weather Dashboard</h3>
+                            <p>A responsive page that shows weather information for a city. Replace with your own project.</p>
+                            <div class="tags">
+                                <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link">Live Demo</a>
+                                <a href="#" class="link">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Have a question or want to work together? Send me a message.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Get in touch</h3>
+                        <p>📧 <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                        <p>📞 +91 00000 00000</p>
+                        <p>📍 [Your City], India</p>
+                        <div class="social">
+                            <a href="#" class="link">GitHub</a>
+                            <a href="#" class="link">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <small class="error" id="nameError"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                            <small class="error" id="emailError"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                            <small class="error" id="messageError"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-success" id="formSuccess" hidden></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> [YOUR NAME]. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
